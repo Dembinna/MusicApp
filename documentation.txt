@@ -1,0 +1,41 @@
+﻿Popis aplikace:
+
+MusicApp je hudební aplikace. Hudební aplikace, která hlavně slouží k procvičení znalosti akordů.
+Aplikace má rozhraní v anglickém jazyce. Při spuštění má aplikace úvodní okno, v kterém je vidět celý název aplikace Music Application: Chords.
+Potom na stejném grafickém okně je Menu, výběr. Uživatel si zde může vybrat ze tří možností. Tři tlačítka, každé má svoji funkci.
+Slouží k tomu, aby se člověk dostal na vybrané okno(Grid). Prvním tlačítkem se dá dostat do knihovny akordů. Tlačítko se jmenuje Chord Library.
+V knohvně je Grid, který je vizuálně rozdělený na dvě části. V levé části je přehled akordů. Akordů je 24. Jsou sezařezé vzestupně od C.
+Prvních 12 je durových a dalších 12 molových. Každý název akordu je umístěn na jednotlivém tlačítku.  Při kliknutí na tlačítko s akordem
+se zobrazí klavírní oktává a na ní vybarvené tři klávesy, které reprezentují, z kterých tří tónů se akord skládá. Uživatel má tak možnost
+vidět, z jakých tónů se akord skládá a zároveň, jak se na klavíru dá daný akord zahrát. V pravém horním rohu je tlačítko Menu, které nás po
+kliknutí může vrátit zpět na úvodní okno. Na vstupním okně jsou v menu další dvě tlačítka. Druhé, Piano Game, je tlačítko, které spustí klavírní
+hru. Hra se zobrazí na herním Gridu. Hra funguje tak, že hráč musí správně určit akord. Na horním okraji je název akordu. Pod ním jsou klavírní
+klávesy složené z tlačítek. Cílem každého kola hry je určit správné klávesy(tóny) akordu, tak že se na odpovídající klávesy klikne  a označí se.
+Označení je značeno změnou barvy klávesy. Když se daný akord určí správně, na dolním okraji se na liště(progressbar) zobrazí pokrok, posunutím 
+zelené výplně, a zároveň je viditelné, kolik ještě akordů je přibližně potřeba správně určit. Po správném určení všech akordů hráč dojde na konec
+hry a hra se ukončí. Na konci hry se zobrazí ukončující nápis a hráč se vrací zpět do menu, kde si může vybrat, zahrát si znovu, nebo jiné dvě
+možnosti. Také je možné se v průběhu hry vrátit zpět do menu na ůvod. Nejde se, ale pak vrátit k rozehrané hře. Načítání správných odpovědí začíná
+od znovu. Hra slouží k procvičení akordů a učení se klavírní skladbě. Poslední výběr na úvodu v menu je Chord Charts. Při kliknutí na Chord Charts
+se uživatel dostane do kytarového Gridu, který zobrazuje kytarové akordy, jak se kytarové akordy hrají pomocí kytarových grafů. Uprostřed tohoto
+kytarového Gridu je menší Grid, na kterým se graficky zobrazují kytarové akordy. Katarový graf má šest strun a zobrazuje prvních pět pražců.
+Na pravo od tohoto Gridu je textbox a dvě tlačítka, pomocí kterých se dá přepínat mezi akordy. Akordů je 24 a jsou ve stejném již uvedeném pořadí
+za sebou. Tato část slouží přavážně k učení akordů na kytaru. Zde, v kytarovém Gridu je také v pravém horním rohu tlačítko Menu, kterým je možné
+se vrátit zpět do menu na úvodní Grid.
+
+Popis programu:
+
+Program má šest částí. Hlavní grafická část je definována v MainWindow.xaml.
+Jsou tam definovaný všechny hlavní Gridy jejich parametry a vlastnosti.
+Také všechny tlačítka. Barevně je aplikace posazená do barev antická bíla, modrá a zelená.
+Kytarový Grid je definovaný zvlášť v části Guitar a pak vložený do odpovídajího Gridu.
+Hlavní Gridy(KnihovnaGrid, MainPage, GamePage, GuitarPage) mají vlastnost Visibility(viditelnost),
+pomocí které se dá schovat, nebo zviditelnit potřebný, uživatelem určený, Grid.
+Tak se dá překlikávat mezi jednotlivými okny. O to se starají funkce v části MainWindow.xaml.cs,
+Tam je také inicializace třídy, všech potřebných proměnných a objektů. Funkce, které se starjí o
+průběh a konec hry, funkce, spracovávající akci po stisknutí tlačítka.
+Část kódu v Piano je za ůčelem vytvořit efektivní a funkční klavírní klávesnici.
+Část Guitar je k vyvoření mřížky(grafu) pro katrové akordy a zobrazení akordu.
+V části CodeFile1 jsou vytvořené a definované všechny akordy za pomocí tříd. Jsou tam také všechny tóny(Noty),
+z kterých se akord může skládat a které se taky vyskytují na klavírní oktávě. Složení akordů se dá určit snadno.
+Většinu akordů jsem psala podle svých znalostí. (Je také možné se podívat na tyto akordy na stránce https://www.ultimate-guitar.com/.)
+Některé akordy jsem ověřovala podle knihy Kytarové akordy - Příručka do kapsy autor Ted Fuller , Julian Hayman.
